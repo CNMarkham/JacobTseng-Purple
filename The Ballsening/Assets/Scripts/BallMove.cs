@@ -9,7 +9,7 @@ public class BallMove : MonoBehaviour
 
     [Range(0f, 10f)]
     public float speed;
-    [Range(0f, 1f)]
+    [Range(0f, 100f)]
     public float bounciness;
     // Start is called before the first frame update
     void Start()
