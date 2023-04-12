@@ -288,7 +288,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.909839
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -336,10 +336,12 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: 11.358416, y: -5.049489}
+  - {x: 11.271478, y: -4.880089}
   - {x: -11.229547, y: -4.927915}
   - {x: -11.287071, y: 4.944693}
-  - {x: 11.245323, y: 5.0240116}
-  - {x: 11.220467, y: -5.127822}
+  - {x: 11.245323, y: 4.941434}
+  - {x: 11.227042, y: -2.3421693}
+  - {x: 11.220466, y: -4.9626684}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -356,6 +358,7 @@ GameObject:
   - component: {fileID: 672076418}
   - component: {fileID: 672076417}
   - component: {fileID: 672076420}
+  - component: {fileID: 672076421}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -372,7 +375,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 672076416}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: e0116e9bb7739784f9d6e012d53859c5, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -461,12 +464,26 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &672076421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672076416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b97aa9e458ceeea4982bfd842f5e0fad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1: {fileID: 1281260312}
+  player2: {fileID: 207133036}
 --- !u!1 &1281260309
 GameObject:
   m_ObjectHideFlags: 0
