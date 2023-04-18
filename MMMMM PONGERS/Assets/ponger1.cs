@@ -4,23 +4,24 @@ using UnityEngine;
 
 public class ponger1 : MonoBehaviour
 {
+    public float speed;
     // Start is called before the first frame update
     void Start()
     {
-        public float speed;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-    if ()
-    {
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.Translate(Vector2.down * Time.deltaTime * speed);
+        }
 
-    }
-
-    if ()
-    {
-
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.Translate(Vector2.up * Time.deltaTime * speed);
         }
     }
 }
