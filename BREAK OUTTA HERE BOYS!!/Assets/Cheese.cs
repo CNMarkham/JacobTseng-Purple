@@ -16,10 +16,10 @@ public class Cheese : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Brick"))
         {
-            Destroy(collision.gameObject);
+            Destroy(collision.gameObject); 
+            score++;
+            scoreText.text = score.ToString();
         }
-        score++;
-        scoreText.text = score.ToString();
     }
 }
     // Update is called once per frame

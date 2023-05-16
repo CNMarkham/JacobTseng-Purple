@@ -3,7 +3,8 @@ guid: 6bd9df77f6d6a044bbd4f407eaa8aa59
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - StupidRatPrefab: {fileID: 6747562663940321618, guid: f29aef605cd95c541afb3d286d70fcae, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
