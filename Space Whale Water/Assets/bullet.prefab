@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6500591516561251115}
   - component: {fileID: 2539885491019615608}
   m_Layer: 7
-  m_Name: Pew-Pew Gun
+  m_Name: bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

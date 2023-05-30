@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class bullrt : MonoBehaviour
 {
+    public GameObject bulletPrefab;
     public float speed;
     // Start is called before the first frame update
     void Start()
@@ -14,9 +16,9 @@ public class bullrt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            transform.Translate(Vector2.up * Time.deltaTime * speed);
+            Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         }
     }
 }
