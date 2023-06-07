@@ -249,7 +249,6 @@ GameObject:
   - component: {fileID: 2059891345}
   - component: {fileID: 2059891344}
   - component: {fileID: 2059891346}
-  - component: {fileID: 2059891347}
   - component: {fileID: 2059891348}
   - component: {fileID: 2059891349}
   m_Layer: 6
@@ -319,7 +318,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059891341}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.05, y: -3.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -388,31 +387,6 @@ MonoBehaviour:
   speed: 100
   movementType: 1
   platformSettings: 0
---- !u!68 &2059891347
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2059891341}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -10.028848, y: -4.316202}
-  - {x: 9.93671, y: -4.31178}
-  - {x: 9.940753, y: 4.4283834}
-  - {x: -9.917197, y: 4.3689337}
-  - {x: -9.888348, y: -4.3955445}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &2059891348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,6 +408,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2059891341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 598ffe62036ca7444a5be5e337b76742, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d2a284135f95be40a1e50a11b7ad0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 138050917463857877, guid: 9c295bd1f75c78e439e82735321d0f2b, type: 3}

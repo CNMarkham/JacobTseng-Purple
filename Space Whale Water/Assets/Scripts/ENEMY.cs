@@ -6,8 +6,6 @@ using UnityEngine;
 public class ENEMY : MonoBehaviour
 {
     private Animator animator;
-
-    // Start is called before the first frame update
     public float xSpace;
     public float xOffset;
 
@@ -36,6 +34,13 @@ public class ENEMY : MonoBehaviour
        if (transform.position.x < -8f)
         {
             direction = Vector2.right;
+        }
+    }
+    private void MoveDown()
+    {
+        foreach (ENEMY enemy in FindObjectsOfType(typeof(ENEMY)))
+        {
+            enemy.transform.Translate(Vector2.down);
         }
     }
 }
