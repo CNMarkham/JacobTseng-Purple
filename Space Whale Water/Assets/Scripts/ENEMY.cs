@@ -6,8 +6,8 @@ using UnityEngine;
 public class ENEMY : MonoBehaviour
 {
     private Animator animator;
-    public float xSpace;
-    public float xOffset;
+    public float speed;
+    private Vector2 direction;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -15,8 +15,6 @@ public class ENEMY : MonoBehaviour
         Destroy(gameObject, 1f);
         Destroy(collision.gameObject);
     }
-    public float speed;
-    private Vector2 direction;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -26,21 +24,23 @@ public class ENEMY : MonoBehaviour
     {
         transform.Translate(direction * Time.deltaTime * speed);
 
-        if (transform.position.x > 8f)
+        if (transform.position.x > 9f)
         {
             direction = Vector2.left;
+            MoveDown();
         }
 
-       if (transform.position.x < -8f)
+       if (transform.position.x < -9f)
         {
             direction = Vector2.right;
+            MoveDown();
         }
     }
     private void MoveDown()
     {
         foreach (ENEMY enemy in FindObjectsOfType(typeof(ENEMY)))
         {
-            enemy.transform.Translate(Vector2.down);
+           enemy.transform.Translate(Vector2.down);
         }
     }
 }
