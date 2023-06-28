@@ -399,6 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1997326b635fee45b671fc2d5a34c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rockPrefab: {fileID: 4670177479862874599, guid: ee97f6398e4da2141b4eec0983666b5b, type: 3}
 --- !u!4 &1304301254
 Transform:
   m_ObjectHideFlags: 0
