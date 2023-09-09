@@ -3,21 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class pacman : Movement
+public class pacman : Movement
 {
-    //protected override void ChildUpdate()
-    //{
-    //    float horizontal = Input.GetAxisRaw("Horizontal");
-    //    float vertical = Input.GetAxisRaw("vertical");
-    //}
-
-    // Start is called before the first frame update
-    void Start()
+    protected override void ChildUpdate()
     {
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float Vertical = Input.GetAxisRaw("Vertical");
 
+        if (horizontal != 0 || Vertical != 0)
+        {
+            SetDirection(new Vector2(horizontal, Vertical));
+        }
     }
 
 
+
+    
     // Update is called once per frame
     void Update()
     {
@@ -25,8 +26,8 @@ public abstract class pacman : Movement
         {
             SetDirection(nextDirection);
         }
-
-        //ChildUpdate();
+        transform.right = direction;
+        ChildUpdate();
     }
 }
 

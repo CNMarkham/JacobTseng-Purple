@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public abstract class Movement : MonoBehaviour
 {
     public float speed;
     public Vector2 initialDirection;
@@ -15,9 +15,9 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();  
     }
-
+    abstract protected void ChildUpdate();
     private bool Occupied(Vector2 newDirection)
     {
         RaycastHit2D hit = Physics2D.BoxCast(transform.position, Vector2.one * 0.75f, 0f, newDirection, 1.5f, obstacleLayer);
@@ -31,7 +31,7 @@ public class Movement : MonoBehaviour
 
         rb.MovePosition(position + translation);
     }
-
+    
     protected void SetDirection(Vector2 newDirection)
     {
         if (!Occupied(newDirection))
