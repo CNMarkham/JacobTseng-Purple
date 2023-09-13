@@ -5,11 +5,11 @@ using UnityEngine;
 
 public abstract class pacman : Movement
 {
-    //protected override void ChildUpdate()
-    //{
-    //    float horizontal = Input.GetAxisRaw("Horizontal");
-    //    float vertical = Input.GetAxisRaw("vertical");
-    //}
+    protected override void ChildUpdate()
+    {
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("vertical");
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,7 @@ public abstract class pacman : Movement
             SetDirection(nextDirection);
         }
 
-        //ChildUpdate();
+        ChildUpdate();
     }
 }
 

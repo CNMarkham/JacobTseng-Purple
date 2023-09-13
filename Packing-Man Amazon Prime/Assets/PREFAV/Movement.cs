@@ -15,7 +15,10 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       if (nextDirection != Vector2.zero)
+        {
+            SetDirection(nextDirection);
+        }
     }
 
     private bool Occupied(Vector2 newDirection)
