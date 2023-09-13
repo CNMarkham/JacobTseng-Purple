@@ -3777,16 +3777,51 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &947200053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 947200054}
+  m_Layer: 0
+  m_Name: Left Passage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &947200054
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947200053}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.7402487, y: 0.5408717, z: -0.12236445}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &965201610
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1195418862}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2419190196421690498, guid: b1e6206ac229b6c4caaa61cec0e6bd6d, type: 3}
       propertyPath: m_Name
       value: Pacman
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419190196421690525, guid: b1e6206ac229b6c4caaa61cec0e6bd6d, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2419190196421690525, guid: b1e6206ac229b6c4caaa61cec0e6bd6d, type: 3}
       propertyPath: m_SortingOrder
@@ -3794,7 +3829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2419190196421690526, guid: b1e6206ac229b6c4caaa61cec0e6bd6d, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2419190196421690526, guid: b1e6206ac229b6c4caaa61cec0e6bd6d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3802,11 +3837,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2419190196421690526, guid: b1e6206ac229b6c4caaa61cec0e6bd6d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.820001
+      value: -9.44125
       objectReference: {fileID: 0}
     - target: {fileID: 2419190196421690526, guid: b1e6206ac229b6c4caaa61cec0e6bd6d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.09
+      value: 0.09000003
       objectReference: {fileID: 0}
     - target: {fileID: 2419190196421690526, guid: b1e6206ac229b6c4caaa61cec0e6bd6d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3855,6 +3890,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d0d2a7f0d167eb488277a685d2cd74b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 8
+  initialDirection: {x: 1, y: 0}
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1001 &1195418861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9733,6 +9773,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost_Blinky
       objectReference: {fileID: 0}
+    - target: {fileID: 3828039812802699021, guid: bbf9610a70591f046ae907e3ad309e13, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3828039812802699021, guid: bbf9610a70591f046ae907e3ad309e13, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3828039812802699021, guid: bbf9610a70591f046ae907e3ad309e13, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4536914950126111177, guid: bbf9610a70591f046ae907e3ad309e13, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -9836,6 +9888,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b753b9d30abcf34cbbd808eae4ec838, type: 3}
+--- !u!1 &1764688256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1764688257}
+  m_Layer: 0
+  m_Name: Right Passage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1764688257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764688256}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.7402487, y: 0.5408717, z: -0.12236445}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1807936362
 GameObject:
   m_ObjectHideFlags: 0

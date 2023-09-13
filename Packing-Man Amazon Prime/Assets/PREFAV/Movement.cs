@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public abstract class Movement : MonoBehaviour
 {
     public float speed;
     public Vector2 initialDirection;
@@ -12,9 +12,20 @@ public class Movement : MonoBehaviour
     protected Vector2 direction;
     protected Vector2 nextDirection;
 
-    // Start is called before the first frame update
-    void Start()
+    protected abstract void ChildUpdate();
+    protected void Update()
     {
+        if (nextDirection != Vector2.zero)
+        {
+            SetDirection(nextDirection);
+        }
+
+        ChildUpdate();
+    }
+    // Start is called before the first frame update
+    protected void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
        if (nextDirection != Vector2.zero)
         {
             SetDirection(nextDirection);
