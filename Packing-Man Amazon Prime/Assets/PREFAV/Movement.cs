@@ -12,12 +12,26 @@ public abstract class Movement : MonoBehaviour
     protected Vector2 direction;
     protected Vector2 nextDirection;
 
-    // Start is called before the first frame update
-    void Start()
+    protected abstract void ChildUpdate();
+    protected void Update()
     {
-        rb = GetComponent<Rigidbody2D>();  
+        if (nextDirection != Vector2.zero)
+        {
+            SetDirection(nextDirection);
+        }
+
+        ChildUpdate();
     }
-    abstract protected void ChildUpdate();
+    // Start is called before the first frame update
+    protected void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+       if (nextDirection != Vector2.zero)
+        {
+            SetDirection(nextDirection);
+        }
+    }
+
     private bool Occupied(Vector2 newDirection)
     {
         RaycastHit2D hit = Physics2D.BoxCast(transform.position, Vector2.one * 0.75f, 0f, newDirection, 1.5f, obstacleLayer);
@@ -31,7 +45,7 @@ public abstract class Movement : MonoBehaviour
 
         rb.MovePosition(position + translation);
     }
-    
+
     protected void SetDirection(Vector2 newDirection)
     {
         if (!Occupied(newDirection))

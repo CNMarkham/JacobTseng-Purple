@@ -13,21 +13,23 @@ public class pacman : Movement
         if (horizontal != 0 || Vertical != 0)
         {
             SetDirection(new Vector2(horizontal, Vertical));
+
+            transform.right = direction;
         }
     }
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        base.Start();
+    }
 
 
-    
     // Update is called once per frame
     void Update()
     {
-        if (nextDirection != Vector2.zero)
-        {
-            SetDirection(nextDirection);
-        }
-        transform.right = direction;
-        ChildUpdate();
+        base.Update();
     }
 }
 
