@@ -2,8 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpookyOOOHHHHH: Movement
+public class Spooky : Movement
 {
+    protected override void ChildUpdate()
+    {
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        NODE Node = collision.GetComponent<NODE>();
+
+    }
     // Start is called before the first frame update
     void Start()
     {
