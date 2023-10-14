@@ -4,25 +4,40 @@ using UnityEngine;
 
 public class Spooky : Movement
 {
+  public GameObject body;
     protected override void ChildUpdate()
     {
 
     }
 
+    private void Awake()
+    {
+        body.SetActive(true);
+        
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        NODE Node = collision.GetComponent<NODE>();
+        NODE node = collision.GetComponent<NODE>();
+        if (node != null)
+        {
+            int index = Random.Range(0, node.availableDirections.Count);
 
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+            SetDirection(node.availableDirections[index]);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+            if (node.availableDirections[index] == -direction)
+            {
+                index += 1;
+
+                if (index == node.availableDirections.Count)
+                {
+                    index = 0;
+                }
+            }
+            SetDirection(node.availableDirections[index]);
+        }
+
+
+
+}
 }
