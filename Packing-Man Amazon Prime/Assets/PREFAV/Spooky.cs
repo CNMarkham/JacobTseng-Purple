@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Spooky : Movement
 {
+    public bool atHome;
     public float homeDuration;
     public bool frightened;
     public GameObject body;
@@ -11,6 +12,19 @@ public class Spooky : Movement
     public GameObject blue;
     public GameObject white;
     protected override void ChildUpdate()
+    {
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (atHome && collision.gameObject.layer == LayerMask.NameToLayer("Obstacle"))
+        {
+            SetDirection(-direction);
+        }
+
+    }
+    private void LeaveHome()
     {
         transform.position = new Vector3(0, 2.5f, -1f);
         direction = new Vector2(-1, 0);
@@ -20,11 +34,6 @@ public class Spooky : Movement
         blue.SetActive(false);
         white.SetActive(false);
         frightened = false;
-    }
-
-    private void LeaveHome()
-    {
-
     }
     private void Awake()
     {
