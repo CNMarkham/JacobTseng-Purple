@@ -23,7 +23,7 @@ public class BigPill : Pills
 
         foreach(GameObject ghost in ghosts)
         {
-
+            ghost.GetComponent<Spooky>().Frighten();
         }
     }
 }
