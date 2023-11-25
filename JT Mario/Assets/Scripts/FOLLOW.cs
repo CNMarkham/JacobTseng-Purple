@@ -16,6 +16,7 @@ public class FOLLOW : MonoBehaviour
     void Update()
     {
         Vector3 direction = Target.transform.position - transform.position;
+        direction.Normalize();
         transform.Translate(direction * speed * Time.deltaTime);
         transform.position = new Vector3(transform.position.x, transform.position.y, 1);
     }
