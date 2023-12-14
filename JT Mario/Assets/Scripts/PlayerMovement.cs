@@ -28,5 +28,12 @@ public class PlayerMovement : MonoBehaviour
     private void Jump()
     {
         hit = Physics2D.CircleCast(rb.position, 0.25f, Vector2.down, 0.375f, LayerMask.GetMask("Default"));
+
+        if (hit.collider != null && Input.GetKeyDown(KeyCode.Space))
+        {
+            Vector3 velocity = rb.velocity;
+            velocity.y = jumpforce;
+            rb.velocity = velocity;
+        }
     }
 }
