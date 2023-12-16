@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     private RaycastHit2D hit;
     public float jumpforce;
+    private bool jumping;
     // Start is called before the first frame update
     void Start()
     {
