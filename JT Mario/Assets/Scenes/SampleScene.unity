@@ -103618,6 +103618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MARIO KILLER
       objectReference: {fileID: 0}
+    - target: {fileID: 823794831948211822, guid: ea78fb2dc80aede4c85a0fdb2501be20, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 920601039127627460, guid: ea78fb2dc80aede4c85a0fdb2501be20, type: 3}
       propertyPath: m_RootOrder
       value: 4
