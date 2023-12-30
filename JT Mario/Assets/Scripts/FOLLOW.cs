@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FOLLOW : MonoBehaviour
 {
@@ -19,5 +20,13 @@ public class FOLLOW : MonoBehaviour
         direction.Normalize();
         transform.Translate(direction * speed * Time.deltaTime);
         transform.position = new Vector3(transform.position.x, transform.position.y, 1);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.layer == 7)
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }
