@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Death in Detroit.unity
+    guid: 6e14f633f6f26594798a08e9efcdec6c
   m_configObjects: {}
