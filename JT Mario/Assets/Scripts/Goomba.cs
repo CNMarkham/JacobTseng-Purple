@@ -13,7 +13,7 @@ public class Goomba : MonoBehaviour
             {
                 GetComponent<Animator>().SetTrigger("death");
                 GetComponent<CircleCollider2D>().enabled = false;
-                GetComponent<EnemyMovement>().enabled = false;
+                GetComponent<EnemyMove>().enabled = false;
                 Rigidbody2D playerRB = collision.gameObject.GetComponent<Rigidbody2D>();
                 playerRB.velocity = new Vector2(playerRB.velocity.x, 10);
                 Destroy(gameObject, 0.5f);
