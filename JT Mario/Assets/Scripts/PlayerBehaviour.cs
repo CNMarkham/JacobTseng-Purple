@@ -27,7 +27,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (big)
         {
-
+            Shrink();
         }
         else
         {
