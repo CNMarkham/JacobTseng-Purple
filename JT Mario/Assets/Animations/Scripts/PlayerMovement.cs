@@ -25,7 +25,21 @@ public class PlayerMovement : MonoBehaviour
 
         Jump();
     }
+    private void FlipDirection()
+    {
+        foreach (SpriteRenderer sprite in GetComponentsInChildren<SpriteRenderer>())
+        {
+            sprite.flipX = rb.velocity.x < 0;
+        }
+    }
 
+    private void ChangeAnimations()
+    {
+        foreach (Animatior animator in GetComponentsInChildren())
+        {
+
+        }
+    }
     private void Jump()
     {
         hit = Physics2D.CircleCast(rb.position, 0.25f, Vector2.down, 0.375f, LayerMask.GetMask("Default"));
@@ -53,11 +67,13 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = 0;
             rb.velocity = velocity;
             jumping = false;
-        }
-        Blocked blocked = hitTop.collider.gameObject.GetComponent<Blocked>();
-        if (blocked != null)
-        {
-            blocked.hit();
+
+            Blocked blocked = hitTop.collider.gameObject.GetComponent<Blocked>();
+
+            if (blocked != null)
+            {
+                blocked.hit();
+            }
         }
     }
 
