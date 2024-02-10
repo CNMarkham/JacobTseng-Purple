@@ -23,6 +23,8 @@ public class Kooper : MonoBehaviour
 
         if (collision.transform.position.y > transform.position.y + 0.4f)
         {
+            Rigidbody2D playerRB = collision.gameObject.GetComponent<Rigidbody2D>();
+            playerRB.velocity = new Vector2(playerRB.velocity.x, 10);
             if (shelled)
             {
                 Launch();
@@ -43,8 +45,6 @@ public class Kooper : MonoBehaviour
         {
             collision.gameObject.GetComponent<PlayerBehaviour>().Hit();
         }
-        Rigidbody2D playerRB = collision.gameObject.GetComponent<Rigidbody2D>();
-        playerRB.velocity = new Vector2(playerRB.velocity.x, 10);
     }
 
     private void Launch()

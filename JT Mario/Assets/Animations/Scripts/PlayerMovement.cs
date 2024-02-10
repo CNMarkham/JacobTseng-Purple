@@ -35,9 +35,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void ChangeAnimations()
     {
-        foreach (Animatior animator in GetComponentsInChildren())
+        foreach (Animator animator in GetComponentsInChildren<Animator>())
         {
-
+            animator.SetFloat("velocityX", rb.velocity.x);
+            animator.SetFloat("horizontalInput", Input.GetAxis("Horizantal"));
+            animator.SetBool("InAir", hit.collider == null || jumping);
         }
     }
     private void Jump()

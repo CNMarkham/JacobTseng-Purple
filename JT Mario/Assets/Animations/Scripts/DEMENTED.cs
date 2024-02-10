@@ -10,21 +10,11 @@ public class DEMENTED : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (collision.transform.position.y > transform.position.y + 0.4f)
-            {
-               // GetComponent<Animator>().SetTrigger("death");
-                GetComponent<CircleCollider2D>().enabled = false;
-                GetComponent<EnemyMove>().enabled = false;
-                Rigidbody2D playerRB = collision.gameObject.GetComponent<Rigidbody2D>();
-                playerRB.velocity = new Vector2(playerRB.velocity.x, 10);
-               // Destroy(gameObject, 0.5f);
-            }
-            else
-            {
-                collision.gameObject.GetComponent<PlayerBehaviour>().Hit();
+
+             collision.gameObject.GetComponent<PlayerBehaviour>().Hit();
             }
         }
-    }
+  
 
     // Start is called before the first frame update
     void Start()
