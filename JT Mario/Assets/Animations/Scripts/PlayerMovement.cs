@@ -24,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
         rb.AddForce(Vector2.right * horizontal * movespeed * Time.deltaTime);
 
         Jump();
+        ChangeAnimations();
+        FlipDirection();
     }
     private void FlipDirection()
     {
@@ -38,8 +40,8 @@ public class PlayerMovement : MonoBehaviour
         foreach (Animator animator in GetComponentsInChildren<Animator>())
         {
             animator.SetFloat("velocityX", rb.velocity.x);
-            animator.SetFloat("horizontalInput", Input.GetAxis("Horizantal"));
-            animator.SetBool("InAir", hit.collider == null || jumping);
+            animator.SetFloat("horizontalInput", Input.GetAxis("Horizontal"));
+            animator.SetBool("inAir", hit.collider == null || jumping);
         }
     }
     private void Jump()
