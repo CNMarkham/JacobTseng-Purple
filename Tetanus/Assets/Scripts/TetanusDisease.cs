@@ -4,24 +4,51 @@ using UnityEngine;
 
 public class TetanusDisease : MonoBehaviour
 {
+    private float previousTime;
+    public float fallTime = 0.8f;
+    public static int width;
+    public static int height;
     public float speed;
-    // Start is called before the first frame update
+
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
+
     void Update()
     {
+        float tempTime = fallTime;
+
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            tempTime = tempTime / 10;
+        };
+
+
+
+        if (Time.time - previousTime > tempTime)
+        {
+            previousTime = Time.time;
+            transform.Translate(Vector3.down, Space.World);
+        }
+
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            transform.Translate(Vector2.left);
+            transform.Translate(Vector2.left, Space.World);
+            if (!ValidMove())
+            {
+                transform.Translate(Vector2.right);
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            transform.Translate(Vector2.right);
+            transform.Translate(Vector2.right, Space.World);
+            if (!ValidMove())
+            {
+                transform.Translate(Vector2.left);
+            }
         }
     }
 
@@ -31,10 +58,17 @@ public class TetanusDisease : MonoBehaviour
         {
             int x = Mathf.RoundToInt(child.transform.position.x);
             int y = Mathf.RoundToInt(child.transform.position.y);
-        }
-        if (x < 0 || y < 0)
-        {
+            if (x < 0 || y < 0)
+            {
+                return false;
+            }
 
+            if(x >= width || y >= height)
+            {
+                return false;
+            }
         }
+        return true;
+
     }
 }
