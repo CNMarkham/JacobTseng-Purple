@@ -6,8 +6,8 @@ public class TetanusDisease : MonoBehaviour
 {
     private float previousTime;
     public float fallTime = 0.8f;
-    public static int width;
-    public static int height;
+    public static int width = 10;
+    public static int height = 20;
     public float speed;
 
     void Start()
@@ -31,6 +31,10 @@ public class TetanusDisease : MonoBehaviour
         {
             previousTime = Time.time;
             transform.Translate(Vector3.down, Space.World);
+            if (!ValidMove())
+            {
+                transform.Translate(Vector2.up, Space.World);
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
@@ -38,7 +42,7 @@ public class TetanusDisease : MonoBehaviour
             transform.Translate(Vector2.left, Space.World);
             if (!ValidMove())
             {
-                transform.Translate(Vector2.right);
+                transform.Translate(Vector2.right, Space.World);
             }
         }
 
@@ -47,7 +51,7 @@ public class TetanusDisease : MonoBehaviour
             transform.Translate(Vector2.right, Space.World);
             if (!ValidMove())
             {
-                transform.Translate(Vector2.left);
+                transform.Translate(Vector2.left, Space.World);
             }
         }
     }
