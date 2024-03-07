@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TetanusDisease : MonoBehaviour
 {
+    public Vector3 rotationPoint;
     private float previousTime;
     public float fallTime = 0.8f;
     public static int width = 10;
@@ -18,6 +19,12 @@ public class TetanusDisease : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyUp(KeyCode.UpArrow))
+        {
+            Vector3 convertedPoint = transform.TransformPoint(rotationPoint);
+            transform.RotateAround(convertedPoint, Vector3.forward, 90);
+        }
+
         float tempTime = fallTime;
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
