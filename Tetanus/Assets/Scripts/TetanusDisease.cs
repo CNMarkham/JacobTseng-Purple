@@ -23,26 +23,13 @@ public class TetanusDisease : MonoBehaviour
         {
             Vector3 convertedPoint = transform.TransformPoint(rotationPoint);
             transform.RotateAround(convertedPoint, Vector3.forward, 90);
-        }
-
-        float tempTime = fallTime;
-
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            tempTime = tempTime / 10;
-        };
-
-
-
-        if (Time.time - previousTime > tempTime)
-        {
-            previousTime = Time.time;
-            transform.Translate(Vector3.down, Space.World);
             if (!ValidMove())
             {
-                transform.Translate(Vector2.up, Space.World);
+                transform.RotateAround(convertedPoint, Vector3.forward, -90);
             }
         }
+    
+
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
@@ -59,6 +46,25 @@ public class TetanusDisease : MonoBehaviour
             if (!ValidMove())
             {
                 transform.Translate(Vector2.left, Space.World);
+            }
+        }
+
+        float tempTime = fallTime;
+
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            tempTime = tempTime / 10;
+        }
+
+        if (Time.time - previousTime > tempTime)
+        {
+            previousTime = Time.time;
+            transform.Translate(Vector3.down, Space.World);
+            if (!ValidMove())
+            {
+                transform.Translate(Vector2.up, Space.World);
+                this.enabled = false;
+                FindObjectOfType<Spawner>().SpawnTetanusDisease();
             }
         }
     }
