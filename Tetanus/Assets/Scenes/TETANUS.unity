@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4046884}
   - component: {fileID: 4046883}
+  - component: {fileID: 4046885}
   m_Layer: 0
   m_Name: SpawnPoint
   m_TagString: Untagged
@@ -168,127 +169,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4046882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 17, z: 0}
+  m_LocalPosition: {x: 5, y: 15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &325888079
-PrefabInstance:
+--- !u!58 &4046885
+CircleCollider2D:
   m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4046882}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3760504332011885554, guid: 1cb1effd80efe1e43ad26627f54c15a8, type: 3}
-      propertyPath: m_Name
-      value: I TetanusDisease
-      objectReference: {fileID: 0}
-    - target: {fileID: 3760504332011885555, guid: 1cb1effd80efe1e43ad26627f54c15a8, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3760504332011885555, guid: 1cb1effd80efe1e43ad26627f54c15a8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.7876973
-      objectReference: {fileID: 0}
-    - target: {fileID: 3760504332011885555, guid: 1cb1effd80efe1e43ad26627f54c15a8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 11.079494
-      objectReference: {fileID: 0}
-    - target: {fileID: 3760504332011885555, guid: 1cb1effd80efe1e43ad26627f54c15a8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3760504332011885555, guid: 1cb1effd80efe1e43ad26627f54c15a8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3760504332011885555, guid: 1cb1effd80efe1e43ad26627f54c15a8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3760504332011885555, guid: 1cb1effd80efe1e43ad26627f54c15a8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3760504332011885555, guid: 1cb1effd80efe1e43ad26627f54c15a8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3760504332011885555, guid: 1cb1effd80efe1e43ad26627f54c15a8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3760504332011885555, guid: 1cb1effd80efe1e43ad26627f54c15a8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3760504332011885555, guid: 1cb1effd80efe1e43ad26627f54c15a8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1cb1effd80efe1e43ad26627f54c15a8, type: 3}
---- !u!1001 &490459156
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1669267932454217278, guid: 0923bed8ba6d07e49b2ff28d5048edac, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1669267932454217278, guid: 0923bed8ba6d07e49b2ff28d5048edac, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.6959443
-      objectReference: {fileID: 0}
-    - target: {fileID: 1669267932454217278, guid: 0923bed8ba6d07e49b2ff28d5048edac, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 17.195028
-      objectReference: {fileID: 0}
-    - target: {fileID: 1669267932454217278, guid: 0923bed8ba6d07e49b2ff28d5048edac, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1669267932454217278, guid: 0923bed8ba6d07e49b2ff28d5048edac, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1669267932454217278, guid: 0923bed8ba6d07e49b2ff28d5048edac, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1669267932454217278, guid: 0923bed8ba6d07e49b2ff28d5048edac, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1669267932454217278, guid: 0923bed8ba6d07e49b2ff28d5048edac, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1669267932454217278, guid: 0923bed8ba6d07e49b2ff28d5048edac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1669267932454217278, guid: 0923bed8ba6d07e49b2ff28d5048edac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1669267932454217278, guid: 0923bed8ba6d07e49b2ff28d5048edac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1669267932454217279, guid: 0923bed8ba6d07e49b2ff28d5048edac, type: 3}
-      propertyPath: m_Name
-      value: S TetanusDisease
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0923bed8ba6d07e49b2ff28d5048edac, type: 3}
+  m_Radius: 0.5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,6 +203,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -342,7 +246,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 11.904404
+  orthographic size: 12
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -366,298 +270,109 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5, y: 9.5, z: 0}
+  m_LocalPosition: {x: 4.5, y: 9.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &672531468
-PrefabInstance:
+--- !u!82 &519420033
+AudioSource:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5596448960853723360, guid: 105d1b23eee428c49a95a6283e06845c, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5596448960853723360, guid: 105d1b23eee428c49a95a6283e06845c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.453745
-      objectReference: {fileID: 0}
-    - target: {fileID: 5596448960853723360, guid: 105d1b23eee428c49a95a6283e06845c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 17.134478
-      objectReference: {fileID: 0}
-    - target: {fileID: 5596448960853723360, guid: 105d1b23eee428c49a95a6283e06845c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5596448960853723360, guid: 105d1b23eee428c49a95a6283e06845c, type: 3}
-      propertyPath: m_LocalRotation.w
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0483bef2d3b5cb7499f584edb95dbef4, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5596448960853723360, guid: 105d1b23eee428c49a95a6283e06845c, type: 3}
-      propertyPath: m_LocalRotation.x
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5596448960853723360, guid: 105d1b23eee428c49a95a6283e06845c, type: 3}
-      propertyPath: m_LocalRotation.y
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5596448960853723360, guid: 105d1b23eee428c49a95a6283e06845c, type: 3}
-      propertyPath: m_LocalRotation.z
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5596448960853723360, guid: 105d1b23eee428c49a95a6283e06845c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5596448960853723360, guid: 105d1b23eee428c49a95a6283e06845c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5596448960853723360, guid: 105d1b23eee428c49a95a6283e06845c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5596448960853723362, guid: 105d1b23eee428c49a95a6283e06845c, type: 3}
-      propertyPath: m_Name
-      value: T TetanusDisease
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 105d1b23eee428c49a95a6283e06845c, type: 3}
---- !u!1001 &862449292
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8792724813838021842, guid: 413d8cd93566af84b8bf7f62a7fd000b, type: 3}
-      propertyPath: m_Name
-      value: Z TetanusDIsease
-      objectReference: {fileID: 0}
-    - target: {fileID: 8792724813838021843, guid: 413d8cd93566af84b8bf7f62a7fd000b, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8792724813838021843, guid: 413d8cd93566af84b8bf7f62a7fd000b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.6353946
-      objectReference: {fileID: 0}
-    - target: {fileID: 8792724813838021843, guid: 413d8cd93566af84b8bf7f62a7fd000b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 16.952827
-      objectReference: {fileID: 0}
-    - target: {fileID: 8792724813838021843, guid: 413d8cd93566af84b8bf7f62a7fd000b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8792724813838021843, guid: 413d8cd93566af84b8bf7f62a7fd000b, type: 3}
-      propertyPath: m_LocalRotation.w
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8792724813838021843, guid: 413d8cd93566af84b8bf7f62a7fd000b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8792724813838021843, guid: 413d8cd93566af84b8bf7f62a7fd000b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8792724813838021843, guid: 413d8cd93566af84b8bf7f62a7fd000b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8792724813838021843, guid: 413d8cd93566af84b8bf7f62a7fd000b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8792724813838021843, guid: 413d8cd93566af84b8bf7f62a7fd000b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8792724813838021843, guid: 413d8cd93566af84b8bf7f62a7fd000b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 413d8cd93566af84b8bf7f62a7fd000b, type: 3}
---- !u!1001 &1151707072
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3142399542582322027, guid: 90fadf67fe85b67479006c4f17a1bd71, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142399542582322027, guid: 90fadf67fe85b67479006c4f17a1bd71, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.4225426
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142399542582322027, guid: 90fadf67fe85b67479006c4f17a1bd71, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 11.7455435
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142399542582322027, guid: 90fadf67fe85b67479006c4f17a1bd71, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.53595805
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142399542582322027, guid: 90fadf67fe85b67479006c4f17a1bd71, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142399542582322027, guid: 90fadf67fe85b67479006c4f17a1bd71, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142399542582322027, guid: 90fadf67fe85b67479006c4f17a1bd71, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142399542582322027, guid: 90fadf67fe85b67479006c4f17a1bd71, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142399542582322027, guid: 90fadf67fe85b67479006c4f17a1bd71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142399542582322027, guid: 90fadf67fe85b67479006c4f17a1bd71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142399542582322027, guid: 90fadf67fe85b67479006c4f17a1bd71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142399542582322028, guid: 90fadf67fe85b67479006c4f17a1bd71, type: 3}
-      propertyPath: m_Name
-      value: O TetanusDisease
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 90fadf67fe85b67479006c4f17a1bd71, type: 3}
---- !u!1001 &1220158038
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1507259471451646569, guid: 529126f050f1153499da49a4f208e3f3, type: 3}
-      propertyPath: m_Name
-      value: L TetanusDisease
-      objectReference: {fileID: 0}
-    - target: {fileID: 1507259471451646582, guid: 529126f050f1153499da49a4f208e3f3, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1507259471451646582, guid: 529126f050f1153499da49a4f208e3f3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.453745
-      objectReference: {fileID: 0}
-    - target: {fileID: 1507259471451646582, guid: 529126f050f1153499da49a4f208e3f3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 18.224375
-      objectReference: {fileID: 0}
-    - target: {fileID: 1507259471451646582, guid: 529126f050f1153499da49a4f208e3f3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1507259471451646582, guid: 529126f050f1153499da49a4f208e3f3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1507259471451646582, guid: 529126f050f1153499da49a4f208e3f3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1507259471451646582, guid: 529126f050f1153499da49a4f208e3f3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1507259471451646582, guid: 529126f050f1153499da49a4f208e3f3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1507259471451646582, guid: 529126f050f1153499da49a4f208e3f3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1507259471451646582, guid: 529126f050f1153499da49a4f208e3f3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1507259471451646582, guid: 529126f050f1153499da49a4f208e3f3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 529126f050f1153499da49a4f208e3f3, type: 3}
---- !u!1001 &1343514921
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1774270701662452337, guid: 7383f9fd6474fcb45b6c7c678d8c4a47, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1774270701662452337, guid: 7383f9fd6474fcb45b6c7c678d8c4a47, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.9986935
-      objectReference: {fileID: 0}
-    - target: {fileID: 1774270701662452337, guid: 7383f9fd6474fcb45b6c7c678d8c4a47, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 18.103275
-      objectReference: {fileID: 0}
-    - target: {fileID: 1774270701662452337, guid: 7383f9fd6474fcb45b6c7c678d8c4a47, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1774270701662452337, guid: 7383f9fd6474fcb45b6c7c678d8c4a47, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1774270701662452337, guid: 7383f9fd6474fcb45b6c7c678d8c4a47, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1774270701662452337, guid: 7383f9fd6474fcb45b6c7c678d8c4a47, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1774270701662452337, guid: 7383f9fd6474fcb45b6c7c678d8c4a47, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1774270701662452337, guid: 7383f9fd6474fcb45b6c7c678d8c4a47, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1774270701662452337, guid: 7383f9fd6474fcb45b6c7c678d8c4a47, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1774270701662452337, guid: 7383f9fd6474fcb45b6c7c678d8c4a47, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1774270701662452338, guid: 7383f9fd6474fcb45b6c7c678d8c4a47, type: 3}
-      propertyPath: m_Name
-      value: J TetanusDisease
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7383f9fd6474fcb45b6c7c678d8c4a47, type: 3}
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1448651778
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,12 +451,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448651778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5, y: 9.5, z: 10}
+  m_LocalPosition: {x: 4.5, y: 9.5, z: 0}
   m_LocalScale: {x: 10, y: 20, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1448651781
 BoxCollider2D:
